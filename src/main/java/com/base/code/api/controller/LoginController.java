@@ -17,6 +17,7 @@ public class LoginController {
 	
 	@GetMapping("")
 	public ResponseEntity<String> triigerMail(){
+		System.out.println("Test Service");
 		return ResponseEntity.ok(testService.getTest());
 	}
 }
